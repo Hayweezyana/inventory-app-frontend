@@ -1,0 +1,30 @@
+.upload-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.upload-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.upload-form {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.upload-form input[type="file"] {
+  margin-bottom: 1rem;
+}
+
+.upload-button {
+  background-color: #10b981;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}

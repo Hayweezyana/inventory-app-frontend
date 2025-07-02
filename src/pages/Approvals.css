@@ -1,0 +1,44 @@
+.approvals-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.approvals-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.approval-card {
+  border: 1px solid #ccc;
+  background-color: #f4f4f5;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.approval-card p {
+  margin: 0.3rem 0;
+}
+
+.approval-card ul {
+  margin-left: 1.5rem;
+}
+
+.approval-btn {
+  margin-top: 1rem;
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.return-btn {
+  margin-left: 0.5rem;
+  background-color: #f59e0b;
+}
+.return-btn:hover {
+  background-color: #d97706;
+}

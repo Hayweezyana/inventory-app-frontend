@@ -1,0 +1,37 @@
+.flags-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.flag-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.flag-card {
+  background-color: #fff7ed;
+  border: 1px solid #fdba74;
+  border-left: 4px solid #f97316;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.flag-card p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+.flag-actions {
+  margin-top: 0.5rem;
+}
+
+.flag-actions button {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}

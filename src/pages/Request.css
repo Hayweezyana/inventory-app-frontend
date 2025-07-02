@@ -1,0 +1,57 @@
+.request-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.request-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.category-section {
+  margin-bottom: 2rem;
+}
+
+.category-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.item-box {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  margin-bottom: 0.5rem;
+}
+
+.item-box button {
+  color: #2563eb;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.selected-section {
+  margin-top: 2rem;
+  background-color: #eef6ff;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.input-qty {
+  margin-left: 0.5rem;
+  border: 1px solid #ccc;
+  padding: 0.25rem 0.5rem;
+  width: 60px;
+}
+
+.submit-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
