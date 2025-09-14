@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import MyRequests from './pages/MyRequests';
 import Request from './pages/Request';
 import Inventory from './pages/Inventory';
 import Approvals from './pages/Approvals';
@@ -12,6 +13,9 @@ import { AuthProvider } from './context/AuthContext';
 import UserManagement from './pages/UserManagement';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+import NotFound from './pages/NotFound';
+import './App.css'
+import Notifications from './pages/Notifications';
 
 const App: React.FC = () => {
   return (
@@ -41,6 +45,16 @@ const App: React.FC = () => {
                 <Inventory />
               </ProtectedRoute>
             } />
+            <Route path="/myrequests" element={
+              <ProtectedRoute allowed={[1]}>
+                <MyRequests />
+              </ProtectedRoute>
+            } />
+            <Route path="/notifications" element={
+              <ProtectedRoute allowed={[1, 2]}>
+                <Notifications />
+              </ProtectedRoute>
+            } />
             <Route path="/approvals" element={
               <ProtectedRoute allowed={[2]}>
                 <Approvals />
@@ -51,12 +65,12 @@ const App: React.FC = () => {
                 <Flags />
               </ProtectedRoute>
             } />
-            <Route path="*" element={<div className="p-4">Page not found</div>} />
             <Route path="/user-management" element={
               <ProtectedRoute allowed={[2]}>
                 <UserManagement />
               </ProtectedRoute>
             } />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
       </AuthProvider>
